@@ -140,19 +140,13 @@
     .from('.hero-sub', { y: 34, opacity: 0, duration: .8 }, '-=.6')
     .from('.hero-actions', { y: 26, opacity: 0, duration: .7 }, '-=.55')
     .from('.hero-facts', { opacity: 0, duration: .7 }, '-=.4')
-    .from('.hero-arch', { y: 90, opacity: 0, duration: 1.1 }, .15)
-    .from('.hero-arch img', { scale: 1.18, duration: 1.4, ease: 'power2.out' }, .15)
-    .from('.hero-disc', { scale: 0, rotation: -40, duration: .8, ease: 'back.out(1.6)' }, '-=.7');
+    .from('.hero-leaf', { y: 90, opacity: 0, duration: 1.1 }, .15)
+    .from('.hero-leaf img', { scale: 1.18, duration: 1.4, ease: 'power2.out' }, .15)
 
   // Slow drift on the hero photo while scrolling away
-  gsap.to('.hero-arch img', {
+  gsap.to('.hero-leaf img', {
     yPercent: 8, ease: 'none',
     scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true }
-  });
-  // The sage disc slowly rotates through the whole page
-  gsap.to('.hero-disc', {
-    rotation: 360, ease: 'none',
-    scrollTrigger: { trigger: document.body, start: 'top top', end: 'bottom bottom', scrub: 1 }
   });
 
   // Statement: thumbnails pop as the sentence arrives

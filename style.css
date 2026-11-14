@@ -60,14 +60,13 @@ h3{font-size:clamp(1.35rem,1.1rem + 1.2vw,1.9rem)}
 .hero-sub{font-size:var(--step-lead);max-width:30ch;margin-top:28px}
 .hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:36px}
 .hero-facts{margin-top:40px;font-size:1.05rem;color:#44543c}
-.hero-arch{border-radius:999px 999px 18px 18px;overflow:hidden;aspect-ratio:4/5;max-height:78svh;width:100%}
-.hero-arch img{width:100%;height:100%;object-fit:cover}
-.hero-disc{position:absolute;left:50vw;bottom:5vh;width:118px;height:118px;border-radius:50%;background:var(--sage);color:var(--deep-2);display:flex;align-items:center;justify-content:center;text-align:center;font-family:"Fraunces",serif;font-weight:640;font-size:.82rem;line-height:1.25;padding:10px}
+.hero-leaf{border-radius:88px 20px 88px 20px;overflow:hidden;aspect-ratio:4/5;max-height:78svh;width:100%}
+.hero-leaf img{width:100%;height:100%;object-fit:cover}
 
 /* ---------- intro statement ---------- */
 .intro{padding:14vh var(--margin);background:var(--sage-soft)}
 .statement{font-family:"Fraunces",serif;font-weight:560;font-size:clamp(1.5rem,2.9vw,2rem);line-height:1.3;max-width:30em;margin:0 auto;text-align:center}
-.statement .thumb{display:inline-block;width:2.2em;height:1em;border-radius:999px 999px 6px 6px;overflow:hidden;vertical-align:-.12em;margin:0 .08em}
+.statement .thumb{display:inline-block;width:2.2em;height:1em;border-radius:14px 4px 14px 4px;overflow:hidden;vertical-align:-.12em;margin:0 .08em}
 .statement .thumb img{width:100%;height:100%;object-fit:cover}
 
 /* ---------- section heads ---------- */
@@ -82,7 +81,8 @@ h3{font-size:clamp(1.35rem,1.1rem + 1.2vw,1.9rem)}
 .flow-stage{position:relative;height:clamp(480px,72svh,640px);perspective:1400px;overflow:hidden;touch-action:pan-y;cursor:grab}
 .flow-stage:active{cursor:grabbing}
 .flow-card{position:absolute;left:50%;top:0;width:min(400px,76vw);aspect-ratio:4/5;margin:0;transform-style:preserve-3d;transition:transform .65s cubic-bezier(.22,.9,.28,1),opacity .65s ease,filter .65s ease;will-change:transform}
-.flow-card img{width:100%;height:100%;object-fit:cover;border-radius:999px 999px 16px 16px;pointer-events:none}
+.flow-card img{width:100%;height:100%;object-fit:cover;border-radius:64px 16px 64px 16px;pointer-events:none}
+.flow-card:nth-child(even) img{border-radius:16px 64px 16px 64px}
 .flow-card figcaption{position:absolute;left:14px;right:14px;bottom:14px;background:var(--cream);color:var(--ink);border-radius:12px;padding:12px 16px;font-size:.98rem;line-height:1.4;opacity:0;transition:opacity .4s ease .15s}
 .flow-card figcaption strong{font-family:"Fraunces",serif}
 .flow-card.is-active figcaption{opacity:1}
@@ -107,9 +107,9 @@ h3{font-size:clamp(1.35rem,1.1rem + 1.2vw,1.9rem)}
 .dish-list li{display:flex;justify-content:space-between;gap:18px;padding:13px 14px;border-radius:10px}
 .dish-list li:nth-child(odd){background:#22402a}
 .dish{display:flex;gap:12px;align-items:flex-start}
-.arch-bullet{flex:none;width:11px;height:15px;margin-top:6px;background:var(--gold);border-radius:999px 999px 2px 2px}
+.leaf-bullet{flex:none;width:12px;height:15px;margin-top:6px;background:var(--gold);border-radius:2px 11px 2px 11px;transform:rotate(8deg)}
 .price{font-family:"Fraunces",serif;font-weight:640;color:var(--gold-soft);white-space:nowrap}
-.menu-photo{border-radius:999px 999px 16px 16px;overflow:hidden;margin-bottom:34px}
+.menu-photo{border-radius:72px 20px 72px 20px;overflow:hidden;margin-bottom:34px}
 .menu-photo img{width:100%;aspect-ratio:4/5;object-fit:cover}
 .side-list{list-style:none;margin-bottom:30px}
 .side-list li{padding:8px 14px;border-radius:10px}
@@ -118,7 +118,7 @@ h3{font-size:clamp(1.35rem,1.1rem + 1.2vw,1.9rem)}
 
 /* ---------- garden table ---------- */
 .table{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(28px,5vw,80px);padding:12vh var(--margin);background:var(--sage);color:var(--deep-2);align-items:start}
-.table-photo{border-radius:999px 999px 18px 18px;overflow:hidden;position:sticky;top:96px}
+.table-photo{border-radius:88px 20px 88px 20px;overflow:hidden;position:sticky;top:96px}
 .table-photo img{width:100%;aspect-ratio:4/5;object-fit:cover}
 .table-copy h2{color:var(--deep-2)}
 .table-lede{font-size:var(--step-lead);margin-top:20px;max-width:34em}
@@ -148,7 +148,7 @@ h3{font-size:clamp(1.35rem,1.1rem + 1.2vw,1.9rem)}
 /* ---------- gather ---------- */
 .gather{padding:12vh 0}
 .gather-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,80px);padding:7vh var(--margin) 0;align-items:center}
-.gather-photo{border-radius:999px 999px 18px 18px;overflow:hidden}
+.gather-photo{border-radius:20px 88px 20px 88px;overflow:hidden}
 .gather-photo img{width:100%;aspect-ratio:4/5;object-fit:cover}
 .gather-list{list-style:none;margin-bottom:24px}
 .gather-list li{padding:13px 14px;border-radius:10px;font-size:1.1rem}
@@ -207,9 +207,8 @@ h3{font-size:clamp(1.35rem,1.1rem + 1.2vw,1.9rem)}
   .sec-head p{justify-self:start}
   .hero{grid-template-columns:1fr;padding-top:110px;min-height:0}
   .hero h1{font-size:clamp(3rem,15.5vw,4.6rem)}
-  .hero-arch{max-height:none;aspect-ratio:4/5}
-  .hero-disc{display:none}
-  .statement{text-align:left;font-size:1.32rem}
+  .hero-leaf{max-height:none;aspect-ratio:4/5}
+    .statement{text-align:left;font-size:1.32rem}
   .intro{padding:10vh var(--margin)}
   .flow-stage{height:520px}
   .flow-card{width:min(300px,74vw)}
@@ -230,5 +229,5 @@ h3{font-size:clamp(1.35rem,1.1rem + 1.2vw,1.9rem)}
 }
 
 /* Garden Table poster keeps its own square shape (it is their printed poster) */
-.table-photo.poster{border-radius:18px}
+.table-photo.poster{border-radius:40px 14px 40px 14px}
 .table-photo.poster img{aspect-ratio:1/1}
