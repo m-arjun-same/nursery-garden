@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Nursery Garden — Los Angeles · A Hidden Oasis at 63rd &amp; Crenshaw</title>
+<meta name="description" content="The Nursery Garden is a tropical garden oasis in South Los Angeles: flora, fauna, Caribbean food from the OnPointttt truck, plant preorders, private events and The Garden Table five-course dinner series. 3401 W. 63rd St, Los Angeles 90043. Open Tuesday–Sunday, 11 AM–8 PM.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,560;0,9..144,640;1,9..144,480&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=7">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="wordmark" href="#top">The Nursery Garden</a>
+  <nav class="topnav" aria-label="Main">
+    <a href="#garden">The Garden</a>
+    <a href="#menu">The Truck</a>
+    <a href="#table">The Garden Table</a>
+    <a href="#gather">Gather</a>
+  </nav>
+  <a class="topaction" href="#visit">Visit</a>
+  <button class="menubtn" id="menuBtn" aria-label="Open menu" aria-expanded="false">Menu</button>
+</header>
+
+<div class="menuoverlay" id="menuOverlay" aria-hidden="true">
+  <nav aria-label="Menu">
+    <a href="#garden">The Garden</a>
+    <a href="#menu">The Truck</a>
+    <a href="#table">The Garden Table</a>
+    <a href="#gather">Gather</a>
+    <a href="#faq">Questions</a>
+    <a href="#visit">Visit Us</a>
+  </nav>
+  <p class="menufoot">3401 W. 63rd St, Los Angeles<br>Tuesday–Sunday · 11 AM–8 PM</p>
+</div>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-copy">
+      <h1>The Nursery<br>Garden</h1>
+      <p class="hero-sub">A hidden tropical oasis at 63rd &amp; Crenshaw — flora, fauna, Caribbean food and good energy, grown from a vacant lot in South Los Angeles.</p>
+      <div class="hero-actions">
+        <a class="btn btn-gold" href="#table">Book The Garden Table</a>
+        <a class="btn btn-ghost" href="#garden">Walk the garden</a>
+      </div>
+      <p class="hero-facts">Open Tuesday–Sunday · 11 AM–8 PM<br>3401 W. 63rd St, Los Angeles 90043</p>
+    </div>
+    <div class="hero-arch" aria-hidden="false">
+      <img id="heroImg" src="assets/hero.jpg" alt="The garden path at The Nursery Garden, lined with palms and potted plants" width="361" height="640" fetchpriority="high">
+    </div>
+    <div class="hero-disc" aria-hidden="true"><span>The<br>Nursery<br>Garden</span></div>
+  </section>
+
+  <!-- INTRO STATEMENT -->
+  <section class="intro">
+    <p class="statement">For years this corner was an empty <span class="thumb"><img src="assets/path.jpg" alt="" loading="lazy"></span> lot. Now it is a <span class="thumb"><img src="assets/leaves.jpg" alt="" loading="lazy"></span> garden — palms overhead, a pond under a bridge, and dinner beneath the <span class="thumb"><img src="assets/lantern.jpg" alt="" loading="lazy"></span> leaves.</p>
+  </section>
+
+  <!-- THE GARDEN -->
+  <section class="garden" id="garden">
+    <div class="sec-head">
+      <h2>The Garden</h2>
+      <p>Come to wander, sit, eat and breathe. Every corner of the lot was planted by hand — gravel paths, a shaded pergola, a hammock strung between green, and the blue OnPointttt truck parked right inside.</p>
+    </div>
+    <div class="flow" id="flow" data-reveal>
+      <div class="flow-stage" id="flowStage" aria-label="Garden photo carousel — drag, swipe, or use the arrows">
+        <figure class="flow-card">
+          <img src="assets/path.jpg" alt="The garden path at The Nursery Garden, with the blue OnPointttt truck at the end" draggable="false">
+          <figcaption><strong>The Path In</strong> — gravel underfoot, green on both sides, the truck at the end.</figcaption>
+        </figure>
+        <figure class="flow-card">
+          <img src="assets/grotto.jpg" alt="The stone grotto and garden path at The Nursery Garden" draggable="false">
+          <figcaption><strong>The Grotto</strong> — stone, shade and running green at the garden's heart.</figcaption>
+        </figure>
+        <figure class="flow-card">
+          <img src="assets/leaves.jpg" alt="Looking through big tropical leaves into the garden" draggable="false">
+          <figcaption><strong>Through the Leaves</strong> — elephant ears and palms, layered deep.</figcaption>
+        </figure>
+        <figure class="flow-card">
+          <img src="assets/coconut.jpg" alt="A fresh coconut with a straw, held up against the garden palms" draggable="false">
+          <figcaption><strong>Fresh Coconut</strong> — cracked open on the spot, straight or with lemonade, sorrel or ginger beer. $10</figcaption>
+        </figure>
+        <figure class="flow-card">
+          <img src="assets/flute.jpg" alt="A flute player performing live in the garden" draggable="false">
+          <figcaption><strong>Live in the Garden</strong> — music nights under the canopy, flute to full bands.</figcaption>
+        </figure>
+        <figure class="flow-card">
+          <img src="assets/wellness.jpg" alt="Massage and wellness in the garden, beside the painted Nursery Garden wall" draggable="false">
+          <figcaption><strong>Wellness Days</strong> — massage, sound baths and slow mornings among the plants.</figcaption>
+        </figure>
+        <figure class="flow-card">
+          <img src="assets/palms.jpg" alt="Palm leaves against the evening sky in the garden" draggable="false">
+          <figcaption><strong>Beneath the Palms</strong> — the canopy that shades it all.</figcaption>
+        </figure>
+      </div>
+      <div class="flow-bar">
+        <button class="flow-btn" id="flowPrev" aria-label="Previous photo">←</button>
+        <div class="flow-dots" id="flowDots" role="tablist" aria-label="Choose photo"></div>
+        <button class="flow-btn" id="flowNext" aria-label="Next photo">→</button>
+      </div>
+      <p class="flow-hint">Drag or swipe through the garden</p>
+    </div>
+    <div class="garden-notes">
+      <div class="note" data-reveal>
+        <h3>Plant preorders</h3>
+        <p>Fall in love with a plant on your walk? Preorder it and take the garden home. Ask at the truck or message <a href="https://www.instagram.com/the_nursery_garden/" target="_blank" rel="noopener">@the_nursery_garden</a>.</p>
+      </div>
+      <div class="note" data-reveal>
+        <h3>Kwanzaa Corner</h3>
+        <p>A corner of the garden kept for culture and gathering — the garden hosts game nights, paint-and-sips, live music and community celebrations all season.</p>
+      </div>
+      <div class="note" data-reveal>
+        <h3>Grown by OnPointttt</h3>
+        <p>The garden is the home of the OnPointttt food truck — six years of Caribbean cooking, now with a garden to eat it in.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE TRUCK / MENU -->
+  <section class="truck" id="menu">
+    <div class="sec-head light">
+      <h2>The Truck</h2>
+      <p>OnPointttt serves from inside the garden. The signature jerk chicken marinates for 24 hours in over 35 herbs and spices. Nothing on the menu has pork, and every side is vegetarian.</p>
+    </div>
+    <div class="menu-grid">
+      <div class="menu-col">
+        <h3>Main Tingz</h3>
+        <ul class="dish-list">
+          <li><span class="dish"><i class="arch-bullet"></i>Jerk Chicken Feast — two proteins, three sides, plantains &amp; bread</span><span class="price">$44</span></li>
+          <li><span class="dish"><i class="arch-bullet"></i>Jerk Chicken Plate — two legs, two thighs, three sides</span><span class="price">$32</span></li>
+          <li><span class="dish"><i class="arch-bullet"></i>Oxtail — oven-roasted, then braised, on rice n' peas with plantain</span><span class="price">$34</span></li>
+          <li><span class="dish"><i class="arch-bullet"></i>Jerk Salmon — on rice n' peas with salad &amp; fresh bread</span><span class="price">$30</span></li>
+          <li><span class="dish"><i class="arch-bullet"></i>Jerk Chicken &amp; Two Sides — with plantains &amp; bread</span><span class="price">$22</span></li>
+          <li><span class="dish"><i class="arch-bullet"></i>Jerk Chicken on Rice n' Peas — coconut rice, salad, jerk dressing</span><span class="price">$20</span></li>
+          <li><span class="dish"><i class="arch-bullet"></i>Jerk Chicken Salad — corn, carrots, red cabbage, cucumber</span><span class="price">$20</span></li>
+          <li><span class="dish"><i class="arch-bullet"></i>Jerk Chicken Tacos — jerk mango salsa in a corn tortilla</span><span class="price">$18</span></li>
+          <li><span class="dish"><i class="arch-bullet"></i>Plantain Tacos — fried plantain, jerk mango salsa</span><span class="price">$18</span></li>
+          <li><span class="dish"><i class="arch-bullet"></i>Four-Sides Plate — your choice of four vegetarian sides</span><span class="price">$18</span></li>
+          <li><span class="dish"><i class="arch-bullet"></i>Jerk Chicken &amp; Fresh Bread — with sweet tangy jerk sauce</span><span class="price">$10+</span></li>
+        </ul>
+      </div>
+      <div class="menu-side">
+        <figure class="menu-photo" data-reveal>
+          <img src="assets/food.jpg" alt="A jerk salmon and jerk chicken plate with rice, salad and plantain, served by OnPointttt" loading="lazy">
+        </figure>
+        <h3>Pon Di Side — $5 each</h3>
+        <ul class="side-list">
+          <li>Rice n' Peas, cooked in coconut milk</li>
+          <li>Fried Plantains — vegan</li>
+          <li>BBQ Beans — no pork</li>
+          <li>Potato Salad</li>
+          <li>Garden Salad — sweet tangy dressing</li>
+          <li>Bread, baked fresh daily</li>
+        </ul>
+        <h3>Tirsty</h3>
+        <ul class="side-list">
+          <li>Homemade Lemonade — $5</li>
+          <li>Homemade Sorrel — $5</li>
+          <li>Homemade Ginger Beer — $5</li>
+          <li>Fresh Coconut Water, in the coconut — $10</li>
+        </ul>
+        <a class="btn btn-cream" href="https://order.toasttab.com/online/onpointttt" target="_blank" rel="noopener">Order pickup on Toast</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE GARDEN TABLE -->
+  <section class="table" id="table">
+    <div class="table-photo poster" data-reveal>
+      <img src="assets/poster.png" alt="The Garden Table poster — one long candlelit table beneath the palms, Sunday November 22 at 4 PM" loading="lazy">
+    </div>
+    <div class="table-copy">
+      <h2>The Garden Table</h2>
+      <p class="table-lede">An intimate Caribbean fine-dining series beneath the palms. Five courses inspired by the flavors of the islands — gluten- and pork-free — with handcrafted cocktails and live music included.</p>
+      <p class="table-date">Next seating — Sunday, November 22 · 4 PM<br><span class="table-seats">30% already sold</span></p>
+      <ol class="courses">
+        <li><strong>Island Beginnings</strong> — Jerk Chicken · Mango Chutney · Crisp Tostada</li>
+        <li><strong>A Taste of Autumn</strong> — Golden Pumpkin Purée</li>
+        <li><strong>Coastal Indulgence</strong> — Spicy Ginger-Garlic Shrimp · Capellini</li>
+        <li><strong>The Caribbean Classic</strong> — Slow-Braised Oxtail · Coconut Risotto</li>
+        <li><strong>The Sweet Finish</strong> — revealed at the table</li>
+      </ol>
+      <p class="cocktails">At the bar: Pineapple &amp; Tamarind Margarita · Coconut Drop Martini · The Sorrellini · Pine-Ginger Wine Spritz</p>
+
+      <form class="reserve" id="reserveForm">
+        <h3>Reserve your seats — $95 per guest</h3>
+        <div class="menus-choice" role="radiogroup" aria-label="Choose your menu">
+          <label><input type="radio" name="menu" value="Signature" checked><span>Signature</span></label>
+          <label><input type="radio" name="menu" value="Coastal Pescatarian"><span>Coastal Pescatarian</span></label>
+          <label><input type="radio" name="menu" value="Botanical Vegetarian"><span>Botanical Vegetarian</span></label>
+        </div>
+        <div class="reserve-row">
+          <label class="guests">Guests
+            <select id="guestCount" aria-label="Number of guests">
+              <option>1</option><option selected>2</option><option>3</option><option>4</option>
+              <option>5</option><option>6</option><option>7</option><option>8</option>
+            </select>
+          </label>
+          <p class="reserve-total">Total <strong id="reserveTotal">$190</strong></p>
+        </div>
+        <div class="reserve-actions">
+          <a class="btn btn-gold" id="reserveMail" href="mailto:contact@OnPointttt.com?subject=Garden%20Table%20Reservation%20—%20Sunday%2C%20November%2022">Reserve by email</a>
+          <a class="btn btn-ghost-light" href="https://order.toasttab.com/online/onpointttt" target="_blank" rel="noopener">Book on Toast</a>
+        </div>
+        <p class="reserve-note">Email opens with your menu and guest count already filled in.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- GATHER -->
+  <section class="gather" id="gather">
+    <div class="sec-head">
+      <h2>Gather in the Garden</h2>
+      <p>The whole garden is bookable — birthdays, weddings, brand nights, paint-and-sips, sound baths and game nights, all under the palms with the truck serving.</p>
+    </div>
+    <div class="gather-grid">
+      <figure class="gather-photo" data-reveal>
+        <img src="assets/gather.jpg" alt="An evening gathering under string lights in The Nursery Garden" loading="lazy">
+      </figure>
+      <div class="gather-copy">
+        <ul class="gather-list">
+          <li><strong>Private events</strong> — the full garden, the pergola and the stage area.</li>
+          <li><strong>Garden Table nights</strong> — your own five-course seating for a special occasion.</li>
+          <li><strong>Community days</strong> — wellness mornings, markets and celebrations.</li>
+        </ul>
+        <p>Tell us the date and the occasion — food, drinks and the garden itself are all on site.</p>
+        <a class="btn btn-green" href="mailto:contact@OnPointttt.com?subject=Private%20Event%20at%20The%20Nursery%20Garden">Inquire — contact@OnPointttt.com</a>
+        <a class="btn btn-ghost" href="tel:+15627061608">Call (562) 706-1608</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="sec-head">
+      <h2>Questions</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>When are you open?</summary>
+        <p>Tuesday to Sunday, 11 AM–8 PM. Closed Mondays. The Garden Table and special events run on their own evenings — check <a href="https://www.instagram.com/the_nursery_garden/" target="_blank" rel="noopener">Instagram</a> for the latest.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Where do I park?</summary>
+        <p>We are at 3401 W. 63rd St, right at Crenshaw — street parking around the corner, and the 210 bus stops at the garden gate.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Is the food really pork-free?</summary>
+        <p>Yes — nothing on the OnPointttt menu contains pork, every side is vegetarian, and The Garden Table menu is gluten- and pork-free.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How do plant preorders work?</summary>
+        <p>Message <a href="https://www.instagram.com/the_nursery_garden/" target="_blank" rel="noopener">@the_nursery_garden</a> or ask at the truck during your visit, and we will have your plant ready for pickup.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Can I book the whole garden?</summary>
+        <p>Yes — private events, weddings and full Garden Table seatings. Email <a href="mailto:contact@OnPointttt.com">contact@OnPointttt.com</a> with your date and occasion.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section class="visit" id="visit">
+    <div class="visit-inner">
+      <h2>Visit the Oasis</h2>
+      <div class="visit-cols">
+        <div>
+          <h3>Find us</h3>
+          <p>3401 W. 63rd St<br>Los Angeles, CA 90043<br>At Crenshaw Blvd, Hyde Park</p>
+          <a class="btn btn-cream" href="https://www.google.com/maps/search/?api=1&amp;query=The+Nursery+Garden+3401+W+63rd+St+Los+Angeles+CA+90043" target="_blank" rel="noopener">Get directions</a>
+        </div>
+        <div>
+          <h3>Hours</h3>
+          <p>Tuesday–Sunday<br>11 AM – 8 PM<br>Closed Monday</p>
+        </div>
+        <div>
+          <h3>Talk to us</h3>
+          <p><a href="tel:+15627061608">(562) 706-1608</a><br>
+          <a href="mailto:contact@OnPointttt.com">contact@OnPointttt.com</a><br>
+          <a href="https://www.instagram.com/the_nursery_garden/" target="_blank" rel="noopener">Instagram — @the_nursery_garden</a><br>
+          <a href="https://www.instagram.com/on_pointttt/" target="_blank" rel="noopener">Instagram — @on_pointttt</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-cta">
+      <p class="footer-cta-text">Dinner beneath the palms, Sunday November 22.</p>
+      <a class="btn btn-gold" href="#table">Reserve The Garden Table</a>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-brand">
+        <p class="footer-logo">The Nursery Garden</p>
+        <p>Flora · Fauna · Food · Good Energy.<br>A hidden oasis by OnPointttt, grown from a vacant lot at 63rd &amp; Crenshaw.</p>
+      </div>
+      <nav class="footer-col" aria-label="Explore">
+        <h3>Explore</h3>
+        <a href="#garden">The Garden</a>
+        <a href="#menu">The Truck</a>
+        <a href="#table">The Garden Table</a>
+        <a href="#gather">Gather</a>
+        <a href="#faq">Questions</a>
+      </nav>
+      <div class="footer-col">
+        <h3>Visit</h3>
+        <p>3401 W. 63rd St<br>Los Angeles, CA 90043</p>
+        <p>Tuesday–Sunday<br>11 AM – 8 PM</p>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=The+Nursery+Garden+3401+W+63rd+St+Los+Angeles+CA+90043" target="_blank" rel="noopener">Get directions</a>
+      </div>
+      <div class="footer-col">
+        <h3>Talk to us</h3>
+        <a href="tel:+15627061608">(562) 706-1608</a>
+        <a href="mailto:contact@OnPointttt.com">contact@OnPointttt.com</a>
+        <a href="https://www.instagram.com/the_nursery_garden/" target="_blank" rel="noopener">Instagram — @the_nursery_garden</a>
+        <a href="https://www.instagram.com/on_pointttt/" target="_blank" rel="noopener">Instagram — @on_pointttt</a>
+        <a href="https://order.toasttab.com/online/onpointttt" target="_blank" rel="noopener">Order pickup — Toast</a>
+      </div>
+    </div>
+    <div class="footer-bar">
+      <p>© 2026 The Nursery Garden · OnPointttt, Los Angeles</p>
+      <p class="footer-credit">Photos from the garden's own Instagram. Menu &amp; prices from OnPointttt's ordering page, Nov 2026.</p>
+      <button class="to-top" id="toTop" aria-label="Back to top">Back to top ↑</button>
+    </div>
+    <p class="footer-name" aria-hidden="true">The Nursery Garden</p>
+  </footer>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+<script src="script.js?v=3"></script>
+</body>
+</html>
